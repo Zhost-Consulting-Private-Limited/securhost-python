@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "securhost-ai-sdk"
+version = "0.1.0"
+description = "Official Python client for the SecurHost AI Gateway — cost-aware model routing, streaming completions, job agents, and telemetry."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Zhost Consulting Private Limited", email = "support@securhost.com" }]
+keywords = ["ai", "gateway", "llm", "routing", "openai", "cost-optimization", "agents", "securhost"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = ["httpx>=0.27"]
+
+[project.urls]
+Homepage = "https://securhost.com"
+Documentation = "https://securhost.com/docs"
+Repository = "https://github.com/Zhost-Consulting-Private-Limited/securhost-python"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["securhost*"]
